@@ -16,6 +16,7 @@ const packageJSON = Object.freeze({
   jest: {
     testEnvironment: 'node',
   },
+  keywords: [],
 });
 
 const babelrc = JSON.stringify({
