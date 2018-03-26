@@ -1,9 +1,11 @@
 {
-  "name": "jae-bradley-npm-package-creator",
+  "name": "jae-bradley-npm-package-creator-cli",
   "version": "0.0.0-development",
   "description": "Creates starting npm package structure using base template I like",
   "main": "index.js",
-  "bin": {},
+  "bin": {
+    "jb-npm-pack-creator": "./build/jb-npm-pack-creator"
+  },
   "scripts": {
     "codecov": "codecov",
     "commitmsg": "commitlint -e $GIT_PARAMS",
@@ -17,20 +19,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/undefined/jae-bradley-npm-package-creator.git"
+    "url": "https://github.com/jaebradley/jae-bradley-npm-package-creator-cli.git"
   },
   "keywords": [
-    "github",
-    "cli",
-    "personal access token",
-    "github personal access token"
+    "npm",
+    "cli"
   ],
   "author": "jae.b.bradley@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/undefined/jae-bradley-npm-package-creator/issues"
+    "url": "https://github.com/jaebradley/jae-bradley-npm-package-creator-cli/issues"
   },
-  "homepage": "https://github.com/undefined/jae-bradley-npm-package-creator#readme",
+  "homepage": "https://github.com/jaebradley/jae-bradley-npm-package-creator-cli#readme",
   "jest": {
     "testEnvironment": "node"
   },
@@ -52,7 +52,10 @@
     "travis-deploy-once": "^4.4.1"
   },
   "dependencies": {
+    "child-process-promise": "^2.2.1",
     "commander": "^2.15.1",
-    "inquirer": "^5.1.0"
+    "fs-extra": "^5.0.0",
+    "inquirer": "^5.1.0",
+    "untildify": "^3.0.2"
   }
 }
