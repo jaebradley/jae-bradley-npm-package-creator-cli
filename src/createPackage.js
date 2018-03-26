@@ -119,12 +119,12 @@ const createPackage = async () => {
       }
     });
 
-    console.log(`Navigating to ${targetDirectory} and installing devDependencies`);
+    console.log(`Navigating to ${targetDirectory}, installing devDependencies, and initializing git`);
     try {
-      await exec(`cd ${targetDirectory}; npm install --save-dev ${devDependencies.join(' ')}`);
+      await exec(`cd ${targetDirectory}; npm install --save-dev ${devDependencies.join(' ')}; git init`);
       console.log(`Navigated to ${targetDirectory} and installed devDependencies!`);
     } catch (error) {
-      console.error(`Failed to navigate to ${targetDirectory} and install devDependencies`);
+      console.error(`Failed to navigate to ${targetDirectory}, install devDependencies, and initializing git`);
       throw error;
     }
   } catch (error) {
