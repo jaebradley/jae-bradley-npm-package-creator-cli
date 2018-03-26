@@ -6,7 +6,7 @@ const generatePackageJSON = ({
   gitHubUsername,
   author,
 }) => (
-  {
+  JSON.stringify({
     ...packageJSON,
     name,
     description,
@@ -19,7 +19,7 @@ const generatePackageJSON = ({
       url: `https://github.com/${gitHubUsername}/${name}/issues`,
     },
     homepage: `https://github.com/${gitHubUsername}/${name}/#readme`,
-  }
+  }, null, 2)
 );
 
 export default generatePackageJSON;

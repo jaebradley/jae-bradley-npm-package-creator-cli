@@ -1,4 +1,5 @@
 import inquirer from 'inquirer';
+import { validate } from 'isemail';
 
 const promptAuthorEmailAddress = async () => (
   inquirer.prompt([
@@ -6,6 +7,7 @@ const promptAuthorEmailAddress = async () => (
       name: 'authorEmailAddress',
       message: 'Input your email address',
       type: 'input',
+      validate: email => validate(email),
     },
   ])
 );
