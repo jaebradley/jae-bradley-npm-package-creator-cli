@@ -12,6 +12,7 @@ const packageJSON = Object.freeze({
     'semantic-commit': 'commit',
     'semantic-release': 'semantic-release',
     'travis-deploy-once': 'travis-deploy-once',
+    'is-es5': 'es-check es5 ./build/*.js',
   },
   jest: {
     testEnvironment: 'node',
