@@ -60,6 +60,7 @@ const devDependencies = Object.freeze([
   'babel-jest',
   'babel-core',
   'codecov',
+  'es-check',
   'eslint',
   'eslint-config-airbnb-base',
   'eslint-plugin-import',
