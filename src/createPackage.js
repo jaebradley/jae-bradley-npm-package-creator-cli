@@ -50,24 +50,78 @@ const filesToCopy = Object.freeze([
 ]);
 
 const devDependencies = Object.freeze([
-  '@babel/cli',
-  '@babel/core',
-  '@babel/preset-env',
-  '@commitlint/cli',
-  '@commitlint/config-angular',
-  '@commitlint/prompt',
-  '@commitlint/prompt-cli',
-  'babel-jest',
-  'babel-core',
-  'codecov',
-  'es-check',
-  'eslint',
-  'eslint-config-airbnb-base',
-  'eslint-plugin-import',
-  'husky',
-  'jest',
-  'semantic-release',
-  'travis-deploy-once',
+  {
+    name: '@babel/cli',
+    version: 'latest',
+  },
+  {
+    name: '@babel/core',
+    version: 'latest',
+  },
+  {
+    name: '@babel/preset-env',
+    version: 'latest',
+  },
+  {
+    name: '@commitlint/cli',
+    version: 'latest',
+  },
+  {
+    name: '@commitlint/config-angular',
+    version: 'latest',
+  },
+  {
+    name: '@commitlint/prompt',
+    version: 'latest',
+  },
+  {
+    name: '@commitlint/prompt-cli',
+    version: 'latest',
+  },
+  {
+    name: 'babel-jest',
+    version: 'latest',
+  },
+  {
+    name: 'babel-core',
+    version: '7.0.0-bridge.0',
+  },
+  {
+    name: 'codecov',
+    version: 'latest',
+  },
+  {
+    name: 'es-check',
+    version: 'latest',
+  },
+  {
+    name: 'eslint',
+    version: 'latest',
+  },
+  {
+    name: 'eslint-config-airbnb-base',
+    version: 'latest',
+  },
+  {
+    name: 'eslint-plugin-import',
+    version: 'latest',
+  },
+  {
+    name: 'husky',
+    version: 'latest',
+  },
+  {
+    name: 'jest',
+    version: 'latest',
+  },
+  {
+    name: 'semantic-release',
+    version: 'latest',
+  },
+  {
+    name: 'travis-deploy-once',
+    version: 'latest',
+  },
 ]);
 
 const createPackage = async () => {
