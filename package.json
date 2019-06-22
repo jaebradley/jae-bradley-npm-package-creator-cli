@@ -46,7 +46,7 @@
     "@commitlint/prompt": "^7.0.0",
     "@commitlint/prompt-cli": "^7.0.0",
     "codecov": "^3.0.0",
-    "eslint": "^5.0.1",
+    "eslint": "^6.0.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
     "husky": "^0.14.3",
