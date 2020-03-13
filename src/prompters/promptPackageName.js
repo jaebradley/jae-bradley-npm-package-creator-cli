@@ -6,7 +6,7 @@ const promptPackageName = async () => (
       name: 'packageName',
       message: 'Name of Package',
       type: 'input',
-      validate: answer => answer && answer.length > 0,
+      validate: (answer) => answer && answer.length > 0,
     },
   ])
 );

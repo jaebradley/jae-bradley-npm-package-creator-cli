@@ -7,7 +7,7 @@ const promptAuthorEmailAddress = async () => (
       name: 'authorEmailAddress',
       message: 'Input your email address',
       type: 'input',
-      validate: email => validate(email),
+      validate: (email) => validate(email),
     },
   ])
 );
