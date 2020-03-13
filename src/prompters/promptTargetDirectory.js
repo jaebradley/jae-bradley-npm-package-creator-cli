@@ -6,7 +6,7 @@ const promptTargetDirectory = async () => (
       name: 'targetDirectory',
       message: 'Where to create the package',
       type: 'input',
-      validate: answer => answer && answer.length > 0,
+      validate: (answer) => answer && answer.length > 0,
     },
   ])
 );

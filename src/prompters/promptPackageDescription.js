@@ -6,7 +6,7 @@ const promptPackageDescription = async () => (
       name: 'packageDescription',
       message: 'Package description',
       type: 'input',
-      validate: answer => answer && answer.length > 0,
+      validate: (answer) => answer && answer.length > 0,
     },
   ])
 );
